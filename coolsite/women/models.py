@@ -1,8 +1,6 @@
 from django.urls import reverse
 from django.db import models
 
-# Create your models here.
-
 
 class Women(models.Model):
     title = models.CharField(
