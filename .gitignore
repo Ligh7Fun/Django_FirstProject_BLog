@@ -1,0 +1,15 @@
+coolsite.zip
+coolsite_.zip
+.idea
+/venv
+coolsite/women/__pycache__/*
+coolsite/coolsite/__pycache__/*
+coolsite/women/migrations/__pycache__/*
+women/templatetags/__pycache__/*
+women/__pycache__/*
+coolsite/__pycache__/*
+coolsite/__pycache__/*
+coolsite/women/templatetags/__pycache__/__init__.cpython-310.pyc
+coolsite/women/templatetags/__pycache__/women_tags.cpython-310.pyc
+coolsite/women/templatetags/__pycache__/women_tags.cpython-311.pyc
+coolsite/women/templatetags/__pycache__/__init__.cpython-311.pyc
