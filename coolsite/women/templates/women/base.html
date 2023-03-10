@@ -33,13 +33,24 @@
                     <li><a href="{% url m.url_name %}">{{m.title}}</a></li>
                   {% else %}
                     <li class="last">
-                    <a href="{% url m.url_name %}">{{m.title}}</a>
+                      {% if user.is_authenticated %}
+                        Добро пожаловать, <i><a href="/admin">{{ user.username }} </a></i> <a href="admin/logout/">[Выйти]</a>
+                      {% else %}
+                        <a href="{% url m.url_name %}">{{m.title}}</a>
+                      {% endif %}
                     </li>
                   {% endif %} 
                 {% endfor %}
               </ul>
               <div class="clear"></div>
             </div>
+            
+            
+            
+
+            
+
+
           {% endblock mainmenu %}
 
           <table

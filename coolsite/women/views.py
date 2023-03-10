@@ -38,14 +38,15 @@ def login(request):
     context = {
     }
 
-    return render(request, 'women/login.html', context=context)
+    # return render(request, 'women/login.html', context=context)
+    return redirect('adminmenu', context=context)
 
 
 def adminmenu(request):
     context = {
     }
 
-    return redirect('admin/', context=context)
+    return redirect('adminmenu', context=context)
 
 
 def show_post(request, post_slug):
@@ -86,4 +87,8 @@ def archive(request, year):
 
 
 def pageNotFound(request, exception):
-    return HttpResponseNotFound('<h1>404 страница не найдена</h1>')
+    # return HttpResponseNotFound('<h1>404 - страница не найдена<br><a href="/">На главную</a></h1>')
+    context = {
+        'title': '404 - Not found',
+    }
+    return render(request, 'women/404.html', context=context)
