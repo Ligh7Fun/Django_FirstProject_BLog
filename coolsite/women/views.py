@@ -41,6 +41,13 @@ def login(request):
     return render(request, 'women/login.html', context=context)
 
 
+def adminmenu(request):
+    context = {
+    }
+
+    return redirect('admin/', context=context)
+
+
 def show_post(request, post_slug):
     post = get_object_or_404(Women, slug=post_slug)
     context = {
