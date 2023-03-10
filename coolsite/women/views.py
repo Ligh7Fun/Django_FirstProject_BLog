@@ -87,7 +87,6 @@ def archive(request, year):
 
 
 def pageNotFound(request, exception):
-    # return HttpResponseNotFound('<h1>404 - страница не найдена<br><a href="/">На главную</a></h1>')
     context = {
         'title': '404 - Not found',
     }
